@@ -1,0 +1,14 @@
+"use strict";
+
+const langSession = new (require('./intalize/session'))('user-session');
+
+module.exports = {
+
+    saveUser(session, user) {
+        langSession.saveSession(session, user);
+    },
+
+    getUser(session) {
+        return langSession.getSession(session);
+    }
+};
