@@ -103,4 +103,6 @@ if (cluster.isMaster) {
 
     let localsRouting = require('./www/locals/locals_routing');
     localsRouting(app);
+
+    app.listen(3000, () => {})
 }
